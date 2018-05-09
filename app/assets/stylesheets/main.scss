@@ -1,0 +1,52 @@
+// Place all the styles related to the static_pages controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+@import "bootstrap-sprockets";
+@import "bootstrap";
+@import "bootstrap-datetimepicker";
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body { margin-bottom: 60px; }
+
+#header {
+  height: 70px;
+  min-width: 100%;
+  background-color: #799898;
+  color: #fff;
+}
+
+
+.new-task {
+  margin-top: 20px;
+  float: right;
+  background-color: #2a7878;
+  color: #fff;
+}
+
+
+
+.deadline {
+  font-size: 0.7em;
+  font-style: italic;
+  background-color: #799898;
+  color: #fff;
+  padding-left: 2px;
+  padding-right: 2px;
+  margin-left: 10px;
+}
+
+#task-form {
+  display:none;/* Important! for AJAX Tasks */
+  padding-bottom: 15px;
+}
+
+
+.edit {
+  float: right;
+  padding-right: 3px;
+}

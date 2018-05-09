@@ -1,0 +1,27 @@
+
+  <div class="row">
+    <div class="col-xs-8 col-lg-10">
+      <h2>Tasks</h2>
+    </div>
+
+    <div class="col-xs-4 col-lg-2">
+      <%= link_to new_task_path, remote: true do %>
+        <button class="btn btn-default new-task col-xs-12">New</button>
+      <% end %>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-sm-12" id="task-form"></div>
+  </div>
+
+  <div class="row">
+    <div class="col-sm-12" id="tasks">
+
+      <% @tasks.each do |task| %>
+      <%= render task %>
+      <% end %>
+      
+    </div>
+  </div>
+
